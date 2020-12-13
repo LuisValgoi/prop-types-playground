@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import * as UI from "./style";
 
@@ -17,3 +18,17 @@ export default function Card({ name, price, desc, image, primary }) {
     </UI.Card>
   );
 }
+
+Card.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  desc: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  primary: PropTypes.bool,
+};
+
+Card.defaultProps = {
+  name: "N/A",
+  price: 0,
+  desc: "N/A",
+};

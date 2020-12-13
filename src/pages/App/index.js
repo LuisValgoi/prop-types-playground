@@ -13,6 +13,10 @@ function App() {
         <Header>PropTypes Playground</Header>
       </Banner>
       <Container>
+        <Card image="/images/chicago-pizza.jpg" price={9} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vestibulum eros." />
+        <Card primary name="Pizza" image="/images/chicago-pizza.jpg" price={9} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vestibulum eros." />
+        <Card name="Pizza" image="/images/chicago-pizza.jpg" price={9} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vestibulum eros." />
+        <Card primary name="Pizza" image="/images/chicago-pizza.jpg" price={9} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vestibulum eros." />
         <Card name="Pizza" image="/images/chicago-pizza.jpg" price={9} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vestibulum eros." />
         <Card primary name="Pizza" image="/images/chicago-pizza.jpg" price={9} desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec vestibulum eros." />
       </Container>
